@@ -1,0 +1,22 @@
+# fly.toml app configuration file generated for keygen-api-redis on 2024-08-05T15:36:15Z
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'keygen-api-redis'
+primary_region = 'sin'
+
+[build]
+  image = 'flyio/redis:6.2.6'
+
+[[mounts]]
+  source = 'redis_server'
+  destination = '/data'
+
+[[vm]]
+  size = 'shared-cpu-1x'
+  memory = '256mb'
+
+[[metrics]]
+  port = 9091
+  path = '/metrics'
