@@ -31,6 +31,12 @@ primary_region = 'sin'
 [[vm]]
   size = 'shared-cpu-1x'
   memory = '512mb'
+  processes = ["app"]
+
+[[vm]]
+  size = 'shared-cpu-1x'
+  memory = '256mb'
+  processes = ["worker"]
 
 [deploy]
   strategy = "bluegreen"
