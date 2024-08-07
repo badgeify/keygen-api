@@ -35,7 +35,7 @@ primary_region = 'sin'
 
 [[vm]]
   size = 'shared-cpu-1x'
-  memory = '256mb'
+  memory = '512mb'
   processes = ["worker"]
 
 [deploy]
