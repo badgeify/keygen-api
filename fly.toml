@@ -4,7 +4,7 @@
 #
 
 app = 'keygen-api'
-primary_region = 'sin'
+primary_region = 'lax'
 
 [build]
   dockerfile = './Dockerfile'
